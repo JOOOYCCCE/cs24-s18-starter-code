@@ -111,6 +111,11 @@ int IntBST::count(Node *n) const {
 }
 
 // IMPLEMENT THIS FIRST: returns the node for a given value or NULL if none exists
+// Parameters:
+// int value: the value to be found
+// Node* n: the node to start with (for a recursive call)
+// Whenever you call this method from somewhere else, pass it
+// the root node as "n"
 IntBST::Node* IntBST::getNodeFor(int value, Node* n) const{
     return NULL; // REPLACE THIS NON-SOLUTION
 }
