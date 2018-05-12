@@ -1,4 +1,4 @@
-// FILE: stats.h
+  // FILE: stats.h
 // Written by: Michael Main (main@colorado.edu)
 // CLASS PROVIDED: statistician
 //   (a class to keep track of statistics on a sequence of real numbers)
