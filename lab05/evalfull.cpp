@@ -46,7 +46,7 @@ TokenType identify(char *t) {
         return MULTIPLY;
     if (strcmp(t, "/") == 0)
         return DIVIDE;
-    double value;
+    float value;
     if (sscanf(t, "%g", &value) == 1)
         return NUMBER;
     return OTHER;

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 using namespace std;
 
@@ -12,12 +13,18 @@ int main(int argc, char* argv[])
   string courseNames[5];
   double courseGrades[5];
   string courseLetterGrades[5];
+
+  if(argc % 2 == 0 || argc == 1){
+    cerr<<"Usage: ./gpa course letterGrade"<<endl;
+    exit(1);
+  }
+ 
   int numCourses = int(argc/2);
 
-  for (int i = 1; i< argc; i=i+2 ){
-    courseNames[i-1] = string(argv[i]);
-    courseLetterGrades[i-1] = string(argv[i+1]);
-    cout<<courseNames[i-1] << "   "<<courseLetterGrades[i-1]<<endl;
+  for (int i = 0; i< numCourses; ++i ){
+    courseNames[i] = string(argv[2*i + 1]);
+    courseLetterGrades[i] = string(argv[2*i + 2]);
+    cout<<courseNames[i] << "   "<<courseLetterGrades[i]<<endl;
   }
 
   assignCourseGrade(numCourses, courseLetterGrades, courseGrades );
