@@ -11,7 +11,7 @@ void Heap::push(int value){
 
 }
 
-// Pops the maximum value off the heap
+// Pops the minimum value off the heap
 // (but does not return it), then ensures
 // the heap is correctly arranged
 void Heap::pop(){
