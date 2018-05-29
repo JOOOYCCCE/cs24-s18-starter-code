@@ -18,7 +18,7 @@ void Heap::pop(){
 
 }
 
-// Returns the maximum element in the heap
+// Returns the minimum element in the heap
 int Heap::top(){
   return 0;
 }
